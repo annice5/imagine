@@ -66,4 +66,42 @@ const bottle1 = {
   for (let i = 0; i<= 5; i++){
     console.log('We did it!', i);
   }
+
+
+  // functions
+// Defining a function
+function login(username, password) {
+  // Validate the username and password
+  if(!username || !password){
+    return 'username or password not provided';
+  }
+  //verify username and password
+ if (username == 'annice' && password == '1234'){
+   return 'user is logged in'; 
+ } else{
+   return 'invalid username or password';
+ }
+}
+
+// Invoking a function
+login('annice');
+
+
+//Basic Arithmetic Operations
+11+12;
+1+0.5;
+43-12;
+45/7;
+5*3;
+14%3;
+
+Math.floor(45/25);
+45%24;
+Math.random()*1000
+Math.max(34,32,37);
+2*(3+4)-5/2;
+
+//the use of Num()
+Number('2')+2
+
   
