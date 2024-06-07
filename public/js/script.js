@@ -104,4 +104,35 @@ Math.max(34,32,37);
 //the use of Num()
 Number('2')+2
 
+
+// Strings in JavaScript
+//Concatenation
+const firstname = 'Agnes';
+const lastname = 'Odame';
+firstname + ' ' + lastname;
+
+//Template Literal
+`${firstname} ${lastname}`;
+
+
+//Stirng Methods
+let fullName = 'agnes odame'
+
+fullName.length
+fullName.toUpperCase()
+fullName.toLowerCase()
+fullName.charAt(5)
+fullName.charAt(7)
+fullName.slice(6,11)
+fullName.split('')
+fullName.replace('agnes','annice')
+fullName.indexOf('ame')
+
+//String Conversion
+Number('3.243')
+parseInt('3.243')
+parseFloat('3.243')
+let amount = 1800
+console.log(`GHS${amount}`)
+amount.toString()
   
