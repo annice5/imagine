@@ -159,19 +159,75 @@ addParticipant('agnesodame');
 participants;
 
 
-//Arrays in JavaScript
+
+
+
+
+// // //Arrays in JavaScript
+// // const users = [
+// //  {
+// //    username: 'mickeymond',
+// //    password: '2345',
+// //    email: 'mickeymond@yahoo.com'
+// //  },
+// //  {
+// //   username: 'annice',
+// //    password: '1234',
+// //    email: 'agnesodame5@gmail.com'
+// //  }
+// ];
+
+
+//Write a function that will take a user with firstname, lastname and return fullname;
+
+
+function fullName(user){
+   
+  return {
+    ...user,
+    fullName:`${user.firstname} ${user.lastname}`
+  };
+    
+}
+
+const user = {
+      firstname: 'Agnes',
+      lastname: 'Odame'
+    }
+
+ fullName(user);
+
+
+//Array map
 const users = [
- {
-   username: 'mickeymond',
-   password: '2345',
-   email: 'mickeymond@yahoo.com'
- },
- {
-  username: 'annice',
-   password: '1234',
-   email: 'agnesodame5@gmail.com'
- }
-];
+{firstname: 'Agnes', lastname: 'Odame'},
+{firstname: 'Elon', lastname: 'Musk'},
+{firstname: 'Samantha', lastname: 'Asare'},
+{firstname: 'Oliver', lastname: 'Queen'},
+  ]
+users.map(fullName);
+
+// Square of numbers
+function squareNum(number){
+  return number **2;
+}
+squareNum(5)
+
+const numbers = [9,8,7,6];
+numbers.map(squareNum);
+
+//Array filter
+function isEven(number){
+  return number % 2 === 0;
+}
+isEven(4)
+numbers.filter(isEven);
+
+function isOdd(number){
+  return number % 2!==0;
+}
+isOdd(4)
+numbers.filter(isOdd);
 
 
   
