@@ -230,4 +230,38 @@ isOdd(4)
 numbers.filter(isOdd);
 
 
+
+//write a function that will allow a user to reset their password
+// const user = {
+//   email: 'mickeymond@yahoo.com',
+//   password: '1234'
+// }
+
+
+function resetPassword( email, newPassword){
+  // check if email and new password was provided
+  if(!email || !newPassword){
+  return 'Email or password not provided';
+}
+  //Check if provided email is correct
+  if(email === user.email){
+     //Update password with new
+    user.password = newPassword
+    return 'Password reset Successful';
+  }
+  if(email !==user.email){
+    return 'Invalid email';
+  }
+  
+}
+user;
+resetPassword('mickeymond@yahoo.com', '0934')
+user;
+
+
+
+
+
+
+
   
